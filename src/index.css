@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #F5F5F5;
+}
+
+#searchBar::placeholder {
+    color: #B3B3B3;
+}
+
+.searchBox {
+    position: relative;
+}
+
+/*toti copiii din clasa searchBox vor avea aplicata aceasta proprietate, mai precis doar butonul */
+.searchBox > button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #1e1e1e !important;
+}
+
+.cardMeal {
+    border: none !important;
+    border-radius: 16px !important;
+    box-shadow: 4px 4px 8px #e1e1e1 !important;
+    cursor: pointer;
+    background: #F5F5F5;
+}
+
+/*.cardMeal:hover {*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+/*    transform: translateY(-2px);*/
+/*}*/
+
+.cardImage {
+    width: 88px !important;
+    min-width: 88px !important;
+    height: 88px !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("src/assets/images/pizzaImg.jpg");
+    border-radius: 16px 0 0 16px !important;
+}
+
+.dontLikeButton {
+    background-color: #65558F;
+    border: none !important;
+}
+
+.dontLikeButton:hover {
+    background-color: #3d2282;
+}
+
+.loveIcon:hover {
+    color: #3d2282;
+}
+
+.recipeImage {
+    width: 400px !important;
+    min-width: 400px !important;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("src/assets/images/pizzaImg.jpg");
+}
+
+.leftCol {
+    top: 0;
+    height: 100vh;
+    position: sticky;
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .leftCol {
+        position: static !important;
+        height: auto !important;
+        z-index: 1 !important;
+    }
+
+    .recipeImage {
+        position: relative;
+        width: 100% !important;
+        min-width: 0 !important;
+        height: 0 !important;
+        padding-top: 100%;
+    }
+}
