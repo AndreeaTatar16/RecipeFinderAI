@@ -63,8 +63,6 @@ const RecipeDetails = () => {
                     <div>Recipe not found</div>
                 )}
             </Container>
-            );
-
         </div>
     );
 };
